@@ -14,12 +14,16 @@ tasks.withType(JavaCompile) {
 }
 
 buildscript {
+    ext {
+        kotlin_version = "1.2.41"
+    }
+
     repositories {
         mavenCentral()
         maven { url "https://plugins.gradle.org/m2/" }
     }
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.1.51"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "io.spring.gradle:dependency-management-plugin:1.0.3.RELEASE"
         classpath "com.github.jengelman.gradle.plugins:shadow:2.0.1"
         classpath "de.sebastianboegl.gradle.plugins:shadow-log4j-transformer:2.1.1"
@@ -36,7 +40,7 @@ repositories {
 }
 
 dependencies {
-    compile group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib', version: '1.1.51'
+    compile group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib', version: kotlin_version
 
     compile group: 'com.amazonaws', name: 'aws-lambda-java-core', version: '1.1.0'
     compile group: 'com.amazonaws', name: 'aws-lambda-java-log4j2', version: '1.0.0'
