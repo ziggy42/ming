@@ -32,14 +32,12 @@ repositories {
 }
 
 dependencies {
-    compile group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib', version: kotlin_version
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
-    compile group: 'com.amazonaws', name: 'aws-lambda-java-core', version: '1.1.0'
-    compile group: 'com.amazonaws', name: 'aws-lambda-java-log4j2', version: '1.0.0'
+    compile "com.amazonaws:aws-lambda-java-core:1.1.0"
+    compile "com.amazonaws:aws-lambda-java-log4j2:1.0.0"
 
-    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.8.5'
-    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.8.5'
-    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.8.5'
+    compile "com.fasterxml.jackson.module:jackson-module-kotlin:2.9.5"
 }
 
 task deploy(type: Exec, dependsOn: 'shadowJar') {

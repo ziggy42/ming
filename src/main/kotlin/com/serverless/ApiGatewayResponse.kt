@@ -1,7 +1,7 @@
 package com.serverless
 
 import com.fasterxml.jackson.core.JsonProcessingException
-import com.fasterxml.jackson.databind.ObjectMapper
+import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
 import java.util.Collections
@@ -18,7 +18,7 @@ class ApiGatewayResponse(
 
     class Builder {
         var LOG: Logger = LogManager.getLogger(ApiGatewayResponse.Builder::class.java)
-        var objectMapper: ObjectMapper = ObjectMapper()
+        var objectMapper = jacksonObjectMapper()
 
         var statusCode: Int = 200
         var headers: Map<String, String>? = Collections.emptyMap()
