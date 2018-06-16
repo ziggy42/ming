@@ -6,7 +6,7 @@ provider:
   timeout: 120
 
 package:
-  artifact: build/libs/hello-dev-all.jar
+  artifact: build/libs/ming-dev-all.jar
 
 functions:
   hello:
