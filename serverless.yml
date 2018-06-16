@@ -10,4 +10,4 @@ package:
 
 functions:
   hello:
-    handler: com.serverless.Handler
+    handler: com.ming.Handler

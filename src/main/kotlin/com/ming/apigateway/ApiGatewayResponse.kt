@@ -1,4 +1,4 @@
-package com.serverless.apigateway
+package com.ming.apigateway
 
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 

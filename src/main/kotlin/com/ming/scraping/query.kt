@@ -1,4 +1,4 @@
-package com.serverless.scraping
+package com.ming.scraping
 
 import kotlinx.coroutines.experimental.delay
 import kotlinx.coroutines.experimental.future.await

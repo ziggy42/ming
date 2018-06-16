@@ -1,4 +1,4 @@
-package com.serverless.scraping
+package com.ming.scraping
 
 import kotlinx.coroutines.experimental.newFixedThreadPoolContext
 import kotlinx.coroutines.experimental.withContext

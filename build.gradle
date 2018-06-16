@@ -21,10 +21,8 @@ apply plugin: 'maven'
 apply plugin: 'com.github.johnrengelman.shadow'
 apply plugin: "de.sebastianboegl.shadow.transformer.log4j"
 
-group = 'com.serverless'
+group = 'com.ming'
 version = 'dev'
-
-description = """hello"""
 
 sourceCompatibility = 1.8
 
@@ -45,7 +43,7 @@ dependencies {
 }
 
 task deploy(type: Exec, dependsOn: 'shadowJar') {
-    commandLine 'serverless', 'deploy'
+    commandLine 'ming', 'deploy'
 }
 
 kotlin {

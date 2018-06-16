@@ -1,10 +1,10 @@
-package com.serverless
+package com.ming
 
 import com.amazonaws.services.lambda.runtime.Context
 import com.amazonaws.services.lambda.runtime.RequestHandler
-import com.serverless.apigateway.ApiGatewayResponse
-import com.serverless.apigateway.buildApiGatewayResponse
-import com.serverless.scraping.processQueries
+import com.ming.apigateway.ApiGatewayResponse
+import com.ming.apigateway.buildApiGatewayResponse
+import com.ming.scraping.processQueries
 import kotlinx.coroutines.experimental.runBlocking
 import org.apache.logging.log4j.LogManager
 

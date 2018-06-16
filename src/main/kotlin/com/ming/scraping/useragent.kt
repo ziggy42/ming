@@ -1,4 +1,4 @@
-package com.serverless.scraping
+package com.ming.scraping
 
 import java.util.Random
 
