@@ -1,4 +1,4 @@
-service: gsearch
+service: ming
 
 provider:
   name: aws
